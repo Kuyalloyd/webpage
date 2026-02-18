@@ -1,97 +1,158 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Car Parts Shop</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-       
-
-        header {
-            background-color: #1f2937;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #111827;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 15px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 500px;
-            margin: 30px auto;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.9); 
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
-
-        h2 {
-            margin-top: 0;
-        }
-
-        ul {
-            padding-left: 10px;
-        }
-
-        footer {
-            background-color: #1f2937;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarParts Center</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      color: #111;
+    }
+    nav {
+      background: #1e40af;
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 24px;
+    }
+    nav strong,
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 12px;
+    }
+    .hero {
+      background: #eff6ff;
+      text-align: center;
+      padding: 60px 24px;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .hero h1 span {
+      color: #1e40af;
+    }
+    .hero p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 4px;
+    }
+    .btn-fill {
+      background: #1e40af;
+      color: #fff;
+    }
+    .btn-ghost {
+      border: 2px solid #1e40af;
+      color: #1e40af;
+    }
+    .btn-white {
+      background: #fff;
+      color: #1e40af;
+    }
+    .section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      color: #1e40af;
+      margin-bottom: 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: #eff6ff;
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .card h3 {
+      font-size: 0.95rem;
+      margin: 0 0 6px;
+    }
+    .card p {
+      font-size: 0.85rem;
+      color: #666;
+      margin: 0;
+    }
+    .cta {
+      background: #1e40af;
+      color: #fff;
+      text-align: center;
+      padding: 50px 24px;
+    }
+    .cta h2 {
+      color: #fff;
+    }
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 16px;
+      font-size: 0.85rem;
+    }
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-    <h1>CarParts Center</h1>
-    <p>Quality Car Parts & Repair Services</p>
-</header>
-
 <nav>
-    <a href="Home.html">Home</a>
-    <a href="Products.html">Products</a>
-    <a href="Services.html">Services</a>
-    <a href="Contact.html">Contact</a>
+  <strong>CarParts Center</strong>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </nav>
 
-<div class="container">
-    <h2>Featured Product: Engine Component</h2>
+<div class="hero">
+  <h1>Hi, I'm <span>John Lloyd Galito</span></h1>
+  <p>Owner of CarParts Center — quality parts &amp; reliable repair services.</p>
+  <a href="contact.html" class="btn btn-fill">Contact Us</a>
+  <a href="about.html" class="btn btn-ghost">About Me</a>
+</div>
 
-    <p>
-        We provide high-quality engine components designed for durability and performance.
-        Our parts are tested to ensure reliability and long-lasting use for all types of vehicles.
-    </p>
+<div class="section">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card"><h3>Engine Repair</h3><p>Diagnostics and full engine repair.</p></div>
+    <div class="card"><h3>Brake Service</h3><p>Pads, rotors, and caliper work.</p></div>
+    <div class="card"><h3>Electrical</h3><p>Battery and electrical system check.</p></div>
+    <div class="card"><h3>Suspension</h3><p>Steering and suspension service.</p></div>
+  </div>
+</div>
 
-    <h3>Our Services</h3>
-    <ul>
-        <li>Engine Diagnostics and Repair</li>
-        <li>Brake System Maintenance</li>
-        <li>Suspension and Steering Services</li>
-        <li>Battery and Electrical System Check</li>
-    </ul>
+<div style="background:#f0f4ff;">
+  <div class="section">
+    <h2>Featured Products</h2>
+    <div class="grid">
+      <div class="card"><h3>Engine Parts</h3><p>Tested and durable for all vehicles.</p></div>
+      <div class="card"><h3>Brake Parts</h3><p>Safe and reliable braking components.</p></div>
+      <div class="card"><h3>Electrical Parts</h3><p>Batteries, alternators, and wiring.</p></div>
+    </div>
+  </div>
 </div>
 
 <footer>
-
+  &copy; 2026 John Lloyd Galito &mdash; CarParts Center
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
 </footer>
 
 </body>
