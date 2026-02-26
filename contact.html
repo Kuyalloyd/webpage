@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | CarParts Center</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      color: #111;
+    }
+    nav {
+      background: #1e40af;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 24px;
+    }
+    nav strong {
+      color: #fff;
+      font-size: 1rem;
+    }
+    nav a {
+      color: #bfdbfe;
+      text-decoration: none;
+      margin-left: 16px;
+      font-size: 0.9rem;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .page-hero {
+      background: #eff6ff;
+      text-align: center;
+      padding: 50px 24px;
+    }
+    .page-hero h1 {
+      font-size: 1.8rem;
+      margin-bottom: 6px;
+    }
+    .page-hero p {
+      color: #888;
+      font-size: 0.9rem;
+    }
+    .section {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 36px 24px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      color: #1e40af;
+      margin-bottom: 14px;
+      border-left: 4px solid #1e40af;
+      padding-left: 10px;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+    }
+    .info-box {
+      background: #eff6ff;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .info-box small {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #1e40af;
+      letter-spacing: 1px;
+    }
+    .info-box p {
+      font-size: 0.9rem;
+      margin: 4px 0 0;
+      color: #333;
+      font-weight: 500;
+    }
+    label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      margin-top: 14px;
+      color: #444;
+    }
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 9px 11px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 0.88rem;
+      box-sizing: border-box;
+    }
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: #1e40af;
+    }
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+    button {
+      margin-top: 14px;
+      width: 100%;
+      padding: 11px;
+      background: #1e40af;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1e3a8a;
+    }
+    .success {
+      display: none;
+      margin-top: 12px;
+      padding: 10px 14px;
+      background: #f0faf4;
+      border: 1px solid #b7e5c9;
+      border-radius: 5px;
+      color: #166534;
+      font-size: 0.85rem;
+    }
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 16px;
+      font-size: 0.85rem;
+    }
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+    @media (max-width: 500px) {
+      nav {
+        padding: 12px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <strong><a href="index.html" style="color:#fff;text-decoration:none;">CarParts Center</a></strong>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>Contact Us</h1>
+  <p>Questions about a part or service? We are happy to help.</p>
+</div>
+
+<div class="section">
+  <h2>Contact Information</h2>
+  <div class="info-grid">
+    <div class="info-box"><small>Phone</small><p>0909090909046546</p></div>
+    <div class="info-box"><small>Email</small><p>carpartscenter@gmail.com</p></div>
+    <div class="info-box"><small>Location</small><p>Philippines</p></div>
+    <div class="info-box"><small>Hours</small><p>Mon - Sat, 8AM - 6PM</p></div>
+  </div>
+</div>
+
+<div style="background:#f0f4ff;">
+  <div class="section">
+    <h2>Send a Message</h2>
+    <form id="form">
+      <label>Name</label>
+      <input type="text" id="fname" placeholder="Your name" required>
+      <label>Email</label>
+      <input type="email" id="email" placeholder="you@email.com" required>
+      <label>Topic</label>
+      <select id="subject">
+        <option value="" disabled selected>Select a topic...</option>
+        <option>Part Inquiry</option>
+        <option>Repair Service</option>
+        <option>Pricing</option>
+        <option>Other</option>
+      </select>
+      <label>Message</label>
+      <textarea id="message" placeholder="How can we help you?" required></textarea>
+      <button type="submit">Send Message</button>
+      <div class="success" id="ok">Message sent! We will get back to you soon.</div>
+    </form>
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 John Lloyd Galito &mdash; CarParts Center
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+</footer>
+
+<script>
+  document.getElementById('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (!document.getElementById('fname').value || !document.getElementById('email').value || !document.getElementById('message').value) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+    var ok = document.getElementById('ok');
+    ok.style.display = 'block';
+    this.reset();
+    setTimeout(function() { ok.style.display = 'none'; }, 5000);
+  });
+</script>
+</body>
+</html>
